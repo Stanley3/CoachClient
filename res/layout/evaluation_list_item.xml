@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/tab_solid_bootoml_balck_line"
+        android:orientation="vertical" >
+
+        <!-- 具体评分及评价级别 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_evaluate_level"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pingjia_good" />
+
+            <TextView
+                android:id="@+id/tv_evaluate_service"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:text="服务5分  "
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_evaluate_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_evaluate_service"
+                android:text="技能5分 "
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_evaluate_hygiene"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_evaluate_skill"
+                android:gravity="right"
+                android:text="卫生5分"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <!-- 评价内容 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_evaluate_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:text="王教练果然名不虚传，摸的一把好手，手法纯熟，一看就知道摸过不少小手，下次还找你！"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- 科目及评价时间 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="left"
+                android:text="科目二 "
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_evaluate_day"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="评价日期:2015-05-01"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

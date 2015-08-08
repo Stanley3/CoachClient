@@ -1,0 +1,474 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //顶部背景
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/big_top"
+        android:orientation="vertical"
+        android:weightSum="1">
+        //全局会员中心按钮布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/backlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                //全局会员中心按钮
+
+                <Button
+                    android:id="@+id/backbutton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/top_left_user_normal" />
+            </LinearLayout>
+            //财务信息文字布局
+
+            <LinearLayout
+                android:id="@+id/logintextlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                //财务信息文字样式
+
+                <TextView
+                    android:id="@+id/logintext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="财务信息"
+                    android:textColor="#fff"
+                    android:textSize="23sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="王自如 科二 教练"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="商丘顺达驾校  18137000067"
+                    android:textColor="#fff"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    //中间三个文字
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        //总收入布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            //总收入金额
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="123,456元"
+                android:textColor="#606060"
+                android:textSize="17sp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="总收入"
+                android:textColor="#606060"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        //VIP学员布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            //VIP文字
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10人"
+                android:textColor="#009FED"
+                android:textSize="17sp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VIP学员"
+                android:textColor="#009FED"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        //累计授课布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            //累计授课布局
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100次"
+                android:textColor="#606060"
+                android:textSize="17sp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="累计授课"
+                android:textColor="#606060"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    //中间画线
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="#D0D0D0">
+
+    </LinearLayout>
+
+
+    中间内容//
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid_right_only"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="科二授课"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="科三授课"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="冻结金额"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <LinearLayout
+
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_solid_right_only"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="80次"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="20次"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="800元"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    //中间画线
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="#D0D0D0">
+
+    </LinearLayout>
+
+    //中间四个按钮
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="#00ADF1"
+                android:text="名下VIP"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="#00ADF1"
+                android:text="授课记录"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="#00ADF1"
+                android:text="收入记录"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="#00ADF1"
+                android:text="冻结列表"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    //底部四个按钮
+
+    <LinearLayout
+        android:id="@+id/boot4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        //我的预约按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_order_normal" />
+
+        </LinearLayout>
+
+        //我的评价按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_pingjia_normal" />
+
+        </LinearLayout>
+        //我的财务按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00ADF1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_money_normal" />
+
+        </LinearLayout>
+        //我的排班按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_paiban_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

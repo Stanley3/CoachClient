@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/all_top" >
+
+        <Button
+            android:id="@+id/bt_user_info"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/top_left_user_normal" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/my_turn"
+            android:textColor="@color/my_white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mid_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:background="@color/my_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_today"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="05-01"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="05-02"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_after_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="05-03"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_after_three_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="05-04"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bt_background_unselected"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/bt_background_selected"
+            android:contentDescription="@string/underLine"
+            android:scaleType="matrix" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/my_white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_is_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="休息"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_is_rest"
+            android:layout_alignParentRight="true"
+            android:text="刷新"
+            android:background="#383c49"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_subject_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bt_refresh"
+            android:text="科三"
+            android:textSize="18sp"
+            
+            android:layout_marginRight="10dp"
+            android:textColor="@color/bt_background_selected" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_subject_three"
+            android:layout_marginRight="10dp"
+            android:text="科二"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_turn"
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/my_white"
+         />
+
+</LinearLayout>

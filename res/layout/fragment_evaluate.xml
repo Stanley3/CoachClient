@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/all_top" >
+
+        <Button
+            android:id="@+id/bt_user_info"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/top_left_user_normal" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/myEvaluate"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mid_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="0dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_all_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="100"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/bt_all_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/_all"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_good_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="30"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/bt_good_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/_good"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_middle_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="45"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/bt_middle_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/_middle"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_bad_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="25"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/bt_bad_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="@string/_bad"
+                android:textColor="@color/bt_background_unselected"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bt_background_unselected"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/bt_background_selected"
+            android:contentDescription="@string/underLine"
+            android:scaleType="matrix" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_evaluate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         />
+
+</LinearLayout>

@@ -1,0 +1,498 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //顶部背景
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/all_top">
+
+        //全局会员中心按钮布局
+
+        <LinearLayout
+            android:id="@+id/backlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            //全局返回上级按钮
+
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/all_back" />
+        </LinearLayout>
+        //授课记录布局
+
+        <LinearLayout
+            android:id="@+id/logintextlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            //授课记录文字样式
+
+            <TextView
+                android:id="@+id/logintext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="收入记录"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    //中间四个模块
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-4dp"
+        android:orientation="horizontal">
+
+        //VIP学员列表
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid_right"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VIP学员"
+                android:textColor="#606060"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        //授课记录
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid_right"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="授课记录"
+                android:textColor="#606060"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        //收入记录
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid_on"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="收入记录"
+                android:textColor="#009FED"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        //冻结列表
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="冻结列表"
+                android:textColor="#606060"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        //预约列表第一行
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tab_solid_bootoml_balck_line"
+            android:paddingBottom="10dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                //左边部分
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+                    //姓名
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:text="刘新华"
+                        android:textColor="#000"
+                        android:textSize="22sp" />
+                    //科目
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:text="科目二"
+                        android:textColor="#535353"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                //中间部分
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    //中间电话图标
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/tel" />
+                </LinearLayout>
+
+
+                //右边部分
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+                    //练习日期布局
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+                        //练习日期
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="收入日期：2015-05-01"
+                            android:textColor="#FF7F00"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    //练习时间布局
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+                        //练习时间
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/vip_guoguan" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:text="+900元"
+                            android:textColor="#535353"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //预约列表第一行
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tab_solid_bootoml_balck_line"
+            android:paddingBottom="10dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                //左边部分
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+                    //姓名
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:text="刘新华"
+                        android:textColor="#000"
+                        android:textSize="22sp" />
+                    //科目
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:text="科目三"
+                        android:textColor="#535353"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                //中间部分
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    //中间电话图标
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/tel" />
+                </LinearLayout>
+
+
+                //右边部分
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+                    //练习日期布局
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+                        //练习日期
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="收入日期：2015-05-01"
+                            android:textColor="#FF7F00"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    //练习时间布局
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+                        //练习时间
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/putong_baoguo" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:text="+100元"
+                            android:textColor="#535353"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    //底部四个按钮
+
+    <LinearLayout
+        android:id="@+id/boot4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        //我的预约按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_order_normal" />
+
+        </LinearLayout>
+
+        //我的评价按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_pingjia_normal" />
+
+        </LinearLayout>
+        //我的财务按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00ADF1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_money_normal" />
+
+        </LinearLayout>
+        //我的排班按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_paiban_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

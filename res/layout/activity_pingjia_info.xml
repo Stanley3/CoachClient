@@ -1,0 +1,432 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //顶部背景
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/big_top"
+        android:orientation="vertical"
+        android:weightSum="1">
+        //全局会员中心按钮布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/backlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                //全局会员中心按钮
+
+                <Button
+                    android:id="@+id/backbutton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/all_back" />
+            </LinearLayout>
+            //预约详细文字布局
+
+            <LinearLayout
+                android:id="@+id/logintextlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                //预约详细文字样式
+
+                <TextView
+                    android:id="@+id/logintext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-50dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="评价详细"
+                    android:textColor="#fff"
+                    android:textSize="23sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="13dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anniu"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/pingjia_bad_big" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    //中间四个评价块
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-4dp"
+        android:orientation="horizontal">
+
+        //全部评价布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid_on"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            //全部评价文字
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#009FED"
+                android:textSize="17sp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="#009FED"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        //好评布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            //好评文字
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="70"
+                android:textColor="#606060"
+                android:textSize="17sp" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="好评"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        //中评布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            //中评文字
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="30"
+                android:textColor="#606060"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="中评"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        //差评布局
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_solid"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            //差评文字
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#606060"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="差评"
+                android:textColor="#606060"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    中间内容//
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+
+            android:layout_width="4dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:background="@drawable/tab_solid_right_only"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="评价结果"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="right"
+                android:text="评价时间"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="详细评分"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="评价内容"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <LinearLayout
+
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pingjia_good" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="2015-05-01"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="技能5分    服务5分    卫生5分"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:text="教的是不错，手也果然摸的不错，可是为毛我是个男人也摸我啊，果断中评！"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    //底部四个按钮
+
+    <LinearLayout
+        android:id="@+id/boot4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        //我的预约按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_order_normal" />
+
+        </LinearLayout>
+
+        //我的评价按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00ADF1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_pingjia_normal" />
+
+        </LinearLayout>
+        //我的财务按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_money_normal" />
+
+        </LinearLayout>
+        //我的排班按钮
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00A0EE"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="44dp"
+                android:src="@drawable/foot_paiban_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

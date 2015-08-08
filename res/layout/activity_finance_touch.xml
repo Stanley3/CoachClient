@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/all_top" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/all_back" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/my_finance"
+            android:textColor="@color/my_white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mid_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="0dp"
+        android:background="@color/my_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_vip_student"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="@string/vip_student"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_teach_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="@string/my_teach_login"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_income_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="@string/my_income_login"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+        
+         <Button
+            android:id="@+id/bt_freeze_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/my_white"
+            android:text="@string/my_freeze_login"
+            android:textColor="@color/bt_background_unselected"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bt_background_unselected"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/bt_background_selected"
+            android:scaleType="matrix"
+            android:contentDescription="@string/underLine" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_finance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</LinearLayout>
